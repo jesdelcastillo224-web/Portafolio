@@ -47,20 +47,9 @@
             text-align: center;
         }
 
-        .logo-institucional {
-            margin-bottom: 16px;
-        }
-
-        .logo-institucional img {
-            height: 65px;
-            width: auto;
-            filter: brightness(0) invert(1);
-        }
-
         .university-name {
             font-size: 1.8rem;
             font-weight: 700;
-            letter-spacing: -0.3px;
             margin-bottom: 6px;
         }
 
@@ -140,6 +129,28 @@
             border-radius: 28px;
             max-width: 85%;
             margin: 0 auto;
+        }
+
+        /* Estilos para los botones dentro de hero-content */
+        .btn-hero {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 24px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-hero:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
 
         .card-grid {
@@ -282,8 +293,6 @@
 
 <header>
     <div class="container">
-        <div class="logo-institucional">
-        </div>
         <div class="university-name">Universidad Mariana</div>
         <div class="faculty-name">Facultad de Educación</div>
         <div class="degree-name">Licenciatura en Teología</div>
@@ -332,13 +341,14 @@
         </div>
     </section>
 
-    <!-- PROYECTO -->
+    <!-- PROYECTO con botón agregado -->
     <section id="proyecto">
         <div class="container">
             <div class="section-hero" style="background-image: url('https://images.pexels.com/photos/5789202/pexels-photo-5789202.jpeg');">
                 <div class="hero-content">
                     <h2>Proyecto: Presencia que Forma</h2>
                     <p>¿De qué manera el acompañamiento teológico-pastoral contribuye al reconocimiento de la dignidad personal y al fortalecimiento de relaciones más humanas?</p>
+                    <a href="https://jesdelcastillo224-web.github.io/Proyecto-de-Grado/" target="_blank" rel="noopener noreferrer" class="btn-hero">📂 Ver proyecto completo</a>
                 </div>
             </div>
             <div class="card-grid">
@@ -352,15 +362,14 @@
         </div>
     </section>
 
-    <!-- PLANEACIONES -->
+    <!-- PLANEACIONES con botón agregado -->
     <section id="planeaciones">
         <div class="container">
             <div class="section-hero" style="background-image: url('https://0701.static.prezi.com/preview/v2/v5h7ytwninrxkpdqkhru2tx4e76jc3sachvcdoaizecfr3dnitcq_3_0.png');">
                 <div class="hero-content">
                     <h2>Planeaciones curriculares</h2>
                     <p>Estrategias didácticas, competencias y evaluaciones diseñadas para cada grado.</p>
-                    <h3>Mira las planeaciones copiando y pegando el enlace que está abajo en tu navegador</h3>
-                    <p>https://jesdelcastillo224-web.github.io/Proyecto-de-Grado/</p>
+                    <a href="https://jesdelcastillo224-web.github.io/Proyecto-de-Grado/" target="_blank" rel="noopener noreferrer" class="btn-hero">📄 Ver planeaciones completas</a>
                 </div>
             </div>
             <div class="tabs-container">
@@ -390,7 +399,7 @@
         </div>
     </section>
 
-    <!-- EVIDENCIAS con tus propias fotos (rutas relativas a la carpeta evidencias/) -->
+    <!-- EVIDENCIAS -->
     <section id="evidencias">
         <div class="container">
             <div class="section-hero" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
@@ -400,14 +409,14 @@
                 </div>
             </div>
             <div class="gallery">
-               <div class="gallery-item" style="background-image: url('evidencias/1.jpg');" title="Mayo Mariano - Virgen María"></div>
-<div class="gallery-item" style="background-image: url('evidencias/2.jpg');" title="Pacto de Aula grado 9°"></div>
-<div class="gallery-item" style="background-image: url('evidencias/3.jpg');" title="Árbol de convivencia grado 7"></div>
-<div class="gallery-item" style="background-image: url('evidencias/4.jpg');" title="Mural del cuidado 6°"></div>
-<div class="gallery-item" style="background-image: url('evidencias/5.jpg');" title="Estaciones grado 8"></div>
-<div class="gallery-item" style="background-image: url('evidencias/6.jpg');" title="Campaña visual de valores"></div>
-<div class="gallery-item" style="background-image: url('evidencias/7.jpg');" title="Escuadrón del cuidado"></div>
-<div class="gallery-item" style="background-image: url('evidencias/8.jpg');" title="Taller de oratoria"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/1.jpg');" title="Mayo Mariano - Virgen María"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/2.jpg');" title="Pacto de Aula grado 9°"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/3.jpg');" title="Árbol de convivencia grado 7"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/4.jpg');" title="Mural del cuidado 6°"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/5.jpg');" title="Estaciones grado 8"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/6.jpg');" title="Campaña visual de valores"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/7.jpg');" title="Escuadrón del cuidado"></div>
+                <div class="gallery-item" style="background-image: url('evidencias/8.jpg');" title="Taller de oratoria"></div>
             </div>
         </div>
     </section>
@@ -428,7 +437,6 @@
                     <p style="margin-top: 16px;">Desde la perspectiva teológica, acompañar implica reconocer al otro como imagen de Dios (Gn 1,27), por eso el cuidado de la “casa común” (Laudato Si’) y la defensa de la dignidad de la mujer (Mulieris Dignitatem) atravesaron toda la práctica. La pedagogía del cuidado y la escucha activa se revelaron como herramientas centrales para construir relaciones más humanas y una fe encarnada en la realidad escolar.</p>
                     <p><strong>Palabras clave:</strong> dignidad, pluralismo, justicia restaurativa, cuidado de la creación, pacto de aula.</p>
                 </div>
-                <hr style="margin: 28px 0;">
             </div>
         </div>
     </section>
